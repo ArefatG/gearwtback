@@ -24,7 +24,7 @@ mongoose
   .catch((error) => console.log("Error connecting to MongoDB", error));
 
   //import routes
-const __dirname = path.resolve();
+
   const menuRoutes = require('./api/routes/menuRoutes.js');
   const cartRoutes = require('./api/routes/cartRoutes.js')
   app.use('/menu', menuRoutes)
@@ -41,5 +41,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(6001, () => {
-  console.log(`gearstream app listening on port ${port}`);
+  console.log(`gearstream app listening on port 6001}`);
 });
