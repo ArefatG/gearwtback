@@ -37,9 +37,9 @@ app.get('*', (req, res) => {
 })
 
 app.get("/", (req, res) => {
-  res.send("Hello boo!");
+  res.send("app running");
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`gearstream app listening on port ${port}`);
 });
