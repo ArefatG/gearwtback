@@ -19,7 +19,7 @@ const CartPage = () => {
 
   const handleIncrease = (item) => {
     // console.log(item._id);
-    fetch(`http://localhost:6001/carts/${item._id}`, {
+    fetch(`/carts/${item._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/JSON; charset=UTF-8"
@@ -48,7 +48,7 @@ const CartPage = () => {
 
   const handleDecrease = (item) => {
     if(item.quantity > 1){
-      fetch(`http://localhost:6001/carts/${item._id}`, {
+      fetch(`/carts/${item._id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/JSON; charset=UTF-8"
@@ -95,7 +95,7 @@ const CartPage = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:6001/carts/${item._id}`, {
+        fetch(`/carts/${item._id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
