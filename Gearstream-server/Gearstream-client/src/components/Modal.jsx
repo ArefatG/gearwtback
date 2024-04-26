@@ -51,6 +51,7 @@ const Modal = () => {
         const user = result.user;
         setLoginSuccess(true); // Set login success to true
         setTimeout(() => {
+          document.getElementById("my_modal_5").close();
           navigate(from, { replace: true });
         }, 2000);
       })

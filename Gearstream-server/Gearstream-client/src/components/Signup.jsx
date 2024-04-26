@@ -77,7 +77,13 @@ const Signup = () => {
           <p className="text-center my-2">
             Already have an Account?{" "}
             <Link
-              onClick={() => document.getElementById("my_modal_5").showModal()}
+              onClick={() => 
+                navigate(from, { replace: true }),
+                document.getElementById("my_modal_5").showModal()
+              
+            
+            }
+              
               className="underline text-orange ml-1"
             >
               Login
