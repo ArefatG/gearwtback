@@ -27,7 +27,7 @@ mongoose
 
   const menuRoutes = require('./api/routes/menuRoutes.js');
   const cartRoutes = require('./api/routes/cartRoutes.js')
-  app.use('/menu', menuRoutes)
+  app.use('/catagory', menuRoutes)
   app.use('/carts', cartRoutes)
 
 app.use(express.static(path.join(__dirname, '/Gearstream-client/dist')));

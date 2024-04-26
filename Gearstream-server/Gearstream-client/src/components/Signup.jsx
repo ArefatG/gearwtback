@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../context/AuthProvider";
+import Modal from "./Modal";
 
 const Signup = () => {
   const {
@@ -76,11 +77,12 @@ const Signup = () => {
           <p className="text-center my-2">
             Already have an Account?{" "}
             <Link
-              to="/login"
+              onClick={() => document.getElementById("my_modal_5").showModal()}
               className="underline text-orange ml-1"
             >
               Login
             </Link>{" "}
+            <Modal />
           </p>
         </form>
       </div>
