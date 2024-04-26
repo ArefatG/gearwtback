@@ -40,6 +40,6 @@ app.get("/", (req, res) => {
   res.send("app running");
 });
 
-app.listen(port, () => {
+app.listen(6001, () => {
   console.log(`gearstream app listening on port ${port}`);
 });
