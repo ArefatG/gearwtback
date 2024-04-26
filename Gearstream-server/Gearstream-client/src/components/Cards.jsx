@@ -24,7 +24,7 @@ const Cards = ({ item }) => {
         email: user.email,
       };
       // console.log(cartItem)
-      fetch('/carts', {
+      fetch("/carts", {
         method:"POST",
         headers:{
           'content-type': 'application/json'
